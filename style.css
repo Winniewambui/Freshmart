@@ -146,10 +146,6 @@ span{
     padding: 4px;
     border-radius: 10px;
 }
-.product-icons h4:hover{
-background-color: #035c3e;
-color: white;
-}
 .products{
   display: grid;
   grid-template-columns: repeat(5,1fr);
@@ -218,8 +214,7 @@ address h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    ;
-    /* column-gap: 12px; */
+    column-gap: 12px;
 }
 .social-icons i{
     padding: 10px;
@@ -301,7 +296,7 @@ section p{
 }
 
 
-@media only screen and (max-width: 360px) {
+@media screen and (min-width: 360px) {
 body{
     margin: 0;
     padding: 0;
@@ -333,9 +328,7 @@ font-weight: 700;
 }
 .nav-icons{
     display: flex;
-    float: left;
-    margin-left: 0;
-    gap: 1 em; 
+    gap: 30px; 
 }
 .fresh-mart{
 display: flex;
@@ -345,6 +338,10 @@ row-gap: 0;
 .title h1{
     font-size: 20px;
     padding-top: 70px; 
+}
+.brand{
+    width: 300px;
+    height: 200px;
 }
 .shipping{
     display: flex;
@@ -367,11 +364,11 @@ h2{
     font-size: 20px;
     padding-top: 2px;
 }
+
 .product-icons{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 10px;
-    padding: 0 20px;
+    text-align: center;
 }
 .product-icons h4{
     font-size: 10px;
